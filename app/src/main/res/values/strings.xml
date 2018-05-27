@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Scriven Mirror</string>
+    <string name="app">Scriven Mirror &#8482;</string>
+    <string name="facebook_app_id">944957435656157</string>
+    <string name="title_activity_mainclass">Mainclass</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

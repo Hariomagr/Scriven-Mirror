@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="255"
+    android:background="@mipmap/poi"
+    tools:context="com.example.dellpc.scrivenmirror.Homescreen">
+
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
+        android:id="@+id/google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pers"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/google_sign_in"
+        android:textSize="20dp"
+        app:isDarkTheme="true" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/ind1"
+        android:indeterminate="true"
+        app:indicatorName="BallPulseIndicator" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/ind1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignStart="@+id/pers"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="70dp"
+        android:focusable="auto"
+        android:indeterminate="true"
+        app:indicatorName="PacmanIndicator" />
+
+    <TextView
+        android:id="@+id/tryr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-condensed"
+        android:text="A place for your tale"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/pers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:text="We do not post on your social handle"
+        android:textColor="#000000" />
+
+
+</RelativeLayout>

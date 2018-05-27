@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dellpc.scrivenmirror.Mainclass"
+    tools:showIn="@layout/app_bar_mainclass">
+
+
+    <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"></com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager>
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/indica12"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerInParent="true"
+        app:indicatorColor="#000000"
+        app:indicatorName="BallPulseSyncIndicator" />
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/indicare"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerInParent="true"
+        app:indicatorColor="#ffffff"
+        app:indicatorName="BallPulseSyncIndicator"
+        />
+
+    <TextView
+        android:id="@+id/dddd"
+        android:scrollbarStyle="insideInset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:scrollbars="vertical"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/dddd"
+        android:layout_marginTop="10dp"
+        android:text="Latest"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/likkess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/materialFavoriteButton1"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+    <com.github.ivbaranov.mfb.MaterialFavoriteButton
+        android:id="@+id/materialFavoriteButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/likkess"
+        android:layout_alignEnd="@+id/textView8"
+        app:mfb_bounce_duration="300"
+        app:mfb_color="white"
+        app:mfb_rotation_angle="360"
+        app:mfb_rotation_duration="400"
+        app:mfb_size="48"
+        app:mfb_type="heart" />
+
+    <TextView
+        android:id="@+id/bynamme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/likkess"
+        android:layout_alignEnd="@+id/dddd"
+        android:layout_marginEnd="11dp"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</RelativeLayout>
